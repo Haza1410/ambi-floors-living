@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ambi Floors & Living
 
-## Getting Started
+Premium brochure website for Ambi Floors & Living — an independent flooring and home interiors retailer in Great Barr, Birmingham.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app/` — Page routes (Home, About, Flooring, Carpets, Furniture, Gallery, Testimonials, FAQs, Contact)
+- `src/components/` — Reusable UI components
+- `src/lib/site.ts` — **Central config** for contact details, navigation, copy, and metadata
+- `public/images/` — Logo and static assets
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Updating contact details
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Edit `src/lib/site.ts` to update:
 
-## Deploy on Vercel
+- Phone number and email
+- Opening hours
+- Address
+- Site URL (for SEO/sitemap)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy to GitHub Pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The site deploys automatically to GitHub Pages on every push to `main`.
+
+**Live site:** [https://haza1410.github.io/ambi-floors-living/](https://haza1410.github.io/ambi-floors-living/)
+
+The GitHub Actions workflow builds a static export and publishes it. To build locally for GitHub Pages:
+
+```bash
+npm run export
+```
+
+## Deploy to Vercel
+
+1. Push the project to GitHub
+2. Import the repository at [vercel.com](https://vercel.com)
+3. Deploy — no environment variables required
+
+Or use the Vercel CLI:
+
+```bash
+npx vercel
+```
+
+## Before going live
+
+- [ ] Confirm phone number, email, and opening hours in `src/lib/site.ts`
+- [ ] Update `siteConfig.url` to your real domain
+- [ ] Replace gallery stock images with real showroom/installation photos
+- [ ] Review placeholder testimonials with real customer quotes
+- [ ] Add social media links if applicable
+
+## Tech stack
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Lucide React icons
