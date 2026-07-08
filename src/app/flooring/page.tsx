@@ -21,8 +21,8 @@ export default function FlooringPage() {
         eyebrow="Flooring"
         title="LVT, laminate & vinyl for every lifestyle"
         description="Hard-wearing, beautiful flooring solutions for kitchens, bathrooms, living rooms, and commercial spaces — supplied and professionally fitted across Birmingham and the West Midlands."
-        image="/images/gallery/living-room-wood-floor.jpg"
-        imageAlt="Living room with warm wood-effect flooring"
+        image="https://images.unsplash.com/photo-1597665863042-47e00964d899?w=1200&q=80"
+        imageAlt="Bright living space with wood-plank flooring"
         primaryCta={{ label: "Book a Free Home Measure", href: "/contact" }}
         secondaryCta={{ label: "Visit the Showroom", href: "/contact" }}
         phoneCta={{ label: `Call ${contact.phone}`, href: contact.phoneHref }}

@@ -168,7 +168,8 @@ export const flooringTypes = [
       "Quick to install",
       "Wide style range",
     ],
-    image: "/images/gallery/laminate-flooring-detail.jpg",
+    image:
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
   },
   {
     title: "Vinyl Flooring",
@@ -181,7 +182,7 @@ export const flooringTypes = [
       "Low maintenance",
     ],
     image:
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+      "https://images.unsplash.com/photo-1552242718-c5360894aecd?w=800&q=80",
   },
 ];
 

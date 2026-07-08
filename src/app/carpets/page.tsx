@@ -48,8 +48,8 @@ export default function CarpetsPage() {
         eyebrow="Carpets"
         title="Soft, stylish carpets for every room"
         description="From luxurious deep-pile bedroom carpets to durable options for stairs and living areas — explore our range and let our experts help you find the perfect match."
-        image="/images/gallery/stair-runner-herringbone.jpg"
-        imageAlt="Herringbone stair runner fitted by Ambi Floors & Living"
+        image="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=1200&q=80"
+        imageAlt="Living room with soft wall-to-wall carpet"
         primaryCta={{ label: "Visit Our Showroom", href: "/contact" }}
         secondaryCta={{ label: "Request a Free Quote", href: "/contact" }}
         phoneCta={{ label: `Call ${contact.phone}`, href: contact.phoneHref }}
