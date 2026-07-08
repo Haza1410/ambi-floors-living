@@ -155,7 +155,8 @@ export const flooringTypes = [
       "Comfortable underfoot",
       "Easy to maintain",
     ],
-    image: "/images/gallery/living-room-wood-floor.jpg",
+    image:
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
   },
   {
     title: "Laminate Flooring",
@@ -179,7 +180,8 @@ export const flooringTypes = [
       "Comfortable & quiet",
       "Low maintenance",
     ],
-    image: "/images/gallery/room-wood-floor-shutters.jpg",
+    image:
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
   },
 ];
 

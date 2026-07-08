@@ -61,8 +61,8 @@ export default function CarpetsPage() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
-                alt="Cosy room with soft fitted carpet"
+                src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80"
+                alt="Bedroom with soft grey fitted carpet"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
