@@ -1,12 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #111111;
-  --muted: #666666;
-  --border: #e5e5e5;
-  --surface: #fafafa;
-  --accent: #c9a227;
+  /* Warm, showroom-led neutral palette */
+  --background: #faf6ef;      /* warm off-white */
+  --foreground: #2b2620;      /* soft espresso, not pure black */
+  --muted: #6f665b;           /* warm grey-brown */
+  --border: #e7ddce;          /* soft beige border */
+  --surface: #f3ebdd;         /* light beige surface */
+  --surface-2: #efe4d2;       /* deeper sand for contrast */
+  --accent: #b8891f;          /* warm brand gold (readable on light) */
+  --accent-soft: #f4e9cf;     /* pale gold wash */
+  --brand: #ffd408;           /* logo yellow */
+  --wood: #a9754a;            /* warm wood tone */
 }
 
 @theme inline {
@@ -15,7 +20,11 @@
   --color-muted: var(--muted);
   --color-border: var(--border);
   --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
   --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-brand: var(--brand);
+  --color-wood: var(--wood);
   --font-sans: var(--font-dm-sans);
   --font-serif: var(--font-cormorant);
 }
@@ -28,9 +37,31 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: #111;
+  background: var(--accent);
   color: #fff;
+}
+
+a,
+button {
+  transition-property: color, background-color, border-color, box-shadow, transform, opacity;
+  transition-duration: 200ms;
+}
+
+/* Subtle warm paper texture for feature sections — kept very faint */
+.texture-warm {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(120, 96, 60, 0.05) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+/* Thin gold rule used to break up sections warmly */
+.rule-accent {
+  height: 2px;
+  width: 3rem;
+  background: var(--accent);
+  border-radius: 2px;
 }

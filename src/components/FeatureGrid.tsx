@@ -27,12 +27,15 @@ export function FeatureGrid({ features, columns = 3 }: FeatureGridProps) {
       {features.map((feature) => {
         const Icon = iconMap[feature.icon] ?? Lightbulb;
         return (
-          <div key={feature.title} className="space-y-4">
-            <div className="flex h-12 w-12 items-center justify-center border border-border">
-              <Icon className="h-5 w-5" strokeWidth={1.5} />
+          <div
+            key={feature.title}
+            className="rounded-2xl border border-border bg-background p-7 shadow-sm"
+          >
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent-soft text-accent">
+              <Icon className="h-5 w-5" strokeWidth={1.75} />
             </div>
-            <h3 className="font-serif text-xl font-medium">{feature.title}</h3>
-            <p className="text-sm leading-relaxed text-muted">{feature.description}</p>
+            <h3 className="mt-5 font-serif text-xl font-medium">{feature.title}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted">{feature.description}</p>
           </div>
         );
       })}

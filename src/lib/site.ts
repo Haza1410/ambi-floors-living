@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Ambi Floors & Living",
-  tagline: "Premium flooring & home interiors for every room",
+  tagline: "Your local flooring & furniture showroom in Great Barr",
   description:
-    "Independent flooring and home interiors retailer in Great Barr, Birmingham. Carpets, LVT, laminate, vinyl, rugs, and stylish furniture — with expert advice, professional fitting, and competitive prices.",
+    "Independent flooring and home interiors showroom in Great Barr, Birmingham. Carpets, LVT, laminate, vinyl, rugs and furniture — with friendly, honest advice and professional fitting.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ambifloorsliving.co.uk",
   serviceArea: "Birmingham and the West Midlands",
   products: [
@@ -82,24 +82,65 @@ export const trustPillars = [
 export const categories = [
   {
     title: "Flooring",
-    description: "LVT, laminate, and vinyl flooring for every room.",
+    description: "LVT, laminate and vinyl — see the finishes side by side in store.",
+    tag: "Wood, stone & tile effects",
     href: "/flooring",
     image:
       "https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=800&q=80",
   },
   {
     title: "Carpets",
-    description: "Soft, durable carpets in styles to suit every home.",
+    description: "Soft, hard-wearing carpets you can feel underfoot before you buy.",
+    tag: "Bedrooms, stairs & living rooms",
     href: "/carpets",
     image:
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
   },
   {
     title: "Furniture",
-    description: "Stylish beds, dining sets, sofas, and more.",
+    description: "Beds, sofas, dining sets and rugs to finish the room off.",
+    tag: "Beds, sofas, dining & rugs",
     href: "/furniture",
     image:
       "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+  },
+];
+
+// Small, local trust cues — shown as badges rather than corporate benefit cards.
+export const localTrust = [
+  { label: "Independent local retailer", icon: "store" as const },
+  { label: "Free, honest in-store advice", icon: "message" as const },
+  { label: "Home measuring & fitting", icon: "ruler" as const },
+  { label: "Across Birmingham & the West Midlands", icon: "map" as const },
+  { label: "Friendly, no-pressure showroom", icon: "smile" as const },
+];
+
+// Simple, customer-friendly explanation of how buying with fitting works.
+export const fittingSteps = [
+  {
+    title: "Browse in the showroom",
+    text: "Pop in and compare colours and textures in person. We'll point you towards options that suit your rooms and budget.",
+    icon: "store" as const,
+  },
+  {
+    title: "Free home measure",
+    text: "We measure up at your home so the quote is accurate — and we can advise on the right product for each room.",
+    icon: "ruler" as const,
+  },
+  {
+    title: "Clear, no-obligation quote",
+    text: "You get a straightforward price for supply and fitting, with no hidden extras and no hard sell.",
+    icon: "receipt" as const,
+  },
+  {
+    title: "Professional fitting",
+    text: "Our experienced local fitters handle everything — subfloor prep, edges and doorways — and tidy up after.",
+    icon: "wrench" as const,
+  },
+  {
+    title: "Enjoy your finished room",
+    text: "Step onto your new floor. We're just up the road in Great Barr if you ever need anything afterwards.",
+    icon: "home" as const,
   },
 ];
 
@@ -128,7 +169,7 @@ export const flooringTypes = [
       "Wide style range",
     ],
     image:
-      "https://images.unsplash.com/photo-1600566753190-17f0baa0a6a3?w=800&q=80",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
   },
   {
     title: "Vinyl Flooring",
@@ -224,7 +265,7 @@ export const faqs = [
   {
     question: "Do you sell rugs and furniture too?",
     answer:
-      "Yes. Alongside our flooring ranges, we stock stylish rugs, beds, dining sets, and sofas — everything you need to complete your room transformation.",
+      "Yes. Alongside our flooring ranges, we stock rugs, beds, dining sets, and sofas — so you can pull the whole room together in one place.",
   },
   {
     question: "What payment methods do you accept?",
@@ -255,7 +296,7 @@ export const galleryImages = [
     category: "Furniture",
   },
   {
-    src: "https://images.unsplash.com/photo-1600566753190-17f0baa0a6a3?w=800&q=80",
+    src: "https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80",
     alt: "Laminate flooring in open-plan living area",
     category: "Flooring",
   },

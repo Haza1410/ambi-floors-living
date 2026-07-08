@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Hero } from "@/components/Hero";
 import { CTABanner } from "@/components/CTABanner";
 import { SectionHeading } from "@/components/SectionHeading";
-import { pageMetadata } from "@/lib/site";
+import { pageMetadata, contact } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Furniture",
@@ -37,7 +37,7 @@ const furnitureRanges = [
     title: "Rugs",
     description:
       "Beautiful rugs to add texture, warmth, and personality to any room — the perfect finishing touch.",
-    image: "https://images.unsplash.com/photo-1600166898331-aa3f9ee0c6e8?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=800&q=80",
   },
 ];
 
@@ -46,12 +46,12 @@ export default function FurniturePage() {
     <>
       <Hero
         eyebrow="Furniture"
-        title="Stylish furniture to complete your home"
-        description="Beyond flooring, our showroom offers a curated selection of beds, dining sets, sofas, and rugs — everything you need to transform your living spaces."
+        title="Furniture to finish off your rooms"
+        description="Alongside our floors, the showroom has a handpicked range of beds, dining sets, sofas and rugs — so you can bring the whole room together in one visit."
         image="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80"
         imageAlt="Stylish home furniture"
         primaryCta={{ label: "Visit Our Showroom", href: "/contact" }}
-        secondaryCta={{ label: "Get in Touch", href: "/contact" }}
+        phoneCta={{ label: `Call ${contact.phone}`, href: contact.phoneHref }}
         compact
       />
 
@@ -104,8 +104,8 @@ export default function FurniturePage() {
       </section>
 
       <CTABanner
-        title="Transform your living spaces"
-        description="Pop into our showroom to explore our furniture range, or call us for availability and pricing."
+        title="Come and try the furniture in person"
+        description="Pop into our Great Barr showroom to see the range, or call us for availability and pricing."
       />
     </>
   );

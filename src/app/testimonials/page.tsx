@@ -37,8 +37,8 @@ export default function TestimonialsPage() {
       </section>
 
       <CTABanner
-        title="Join our happy customers"
-        description="Experience the Ambi difference — expert advice, quality products, and fitting you can trust."
+        title="Come and see for yourself"
+        description="Pop into the Great Barr showroom for honest advice, quality flooring, and fitting you can rely on."
       />
     </>
   );

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Hero } from "@/components/Hero";
 import { CTABanner } from "@/components/CTABanner";
 import { SectionHeading } from "@/components/SectionHeading";
-import { pageMetadata } from "@/lib/site";
+import { pageMetadata, contact } from "@/lib/site";
 import { Check } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -52,6 +52,7 @@ export default function CarpetsPage() {
         imageAlt="Beautiful carpeted living room"
         primaryCta={{ label: "Visit Our Showroom", href: "/contact" }}
         secondaryCta={{ label: "Request a Free Quote", href: "/contact" }}
+        phoneCta={{ label: `Call ${contact.phone}`, href: contact.phoneHref }}
         compact
       />
 

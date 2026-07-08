@@ -22,7 +22,7 @@ export function ProductSection({
         reversed ? "lg:[&>*:first-child]:order-2" : ""
       }`}
     >
-      <div className="relative aspect-[4/3] overflow-hidden">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border shadow-sm">
         <Image
           src={image}
           alt={title}
@@ -32,6 +32,7 @@ export function ProductSection({
         />
       </div>
       <div>
+        <span className="rule-accent mb-5" />
         <h3 className="font-serif text-3xl font-medium">{title}</h3>
         <p className="mt-4 leading-relaxed text-muted">{description}</p>
         <ul className="mt-6 space-y-3">

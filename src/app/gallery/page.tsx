@@ -20,7 +20,7 @@ export default function GalleryPage() {
         eyebrow="Gallery"
         title="Inspiration for your next project"
         description="Browse our gallery of flooring, carpets, and furniture installations. Visit our showroom to see our full range and discuss your own project."
-        image="https://images.unsplash.com/photo-1600566753190-17f0baa0a6a3?w=1200&q=80"
+        image="https://images.unsplash.com/photo-1615873968403-89e068629265?w=1200&q=80"
         imageAlt="Flooring gallery inspiration"
         primaryCta={{ label: "Visit Our Showroom", href: "/contact" }}
         compact

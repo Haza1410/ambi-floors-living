@@ -3,7 +3,7 @@ import { Hero } from "@/components/Hero";
 import { ProductSection } from "@/components/ProductSection";
 import { CTABanner } from "@/components/CTABanner";
 import { SectionHeading } from "@/components/SectionHeading";
-import { flooringTypes, pageMetadata } from "@/lib/site";
+import { flooringTypes, pageMetadata, contact } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Flooring",
@@ -25,6 +25,7 @@ export default function FlooringPage() {
         imageAlt="Premium flooring installation"
         primaryCta={{ label: "Book a Free Home Measure", href: "/contact" }}
         secondaryCta={{ label: "Visit the Showroom", href: "/contact" }}
+        phoneCta={{ label: `Call ${contact.phone}`, href: contact.phoneHref }}
         compact
       />
 

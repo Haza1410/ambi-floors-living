@@ -40,11 +40,12 @@ export default function AboutPage() {
     <>
       <Hero
         eyebrow="About us"
-        title="Your trusted flooring & interiors partner"
-        description="Ambi Floors & Living is an independent retailer specialising in high-quality carpets, flooring, rugs, and home furniture — helping homeowners and businesses across Birmingham create spaces they love."
+        title="A local, independent flooring & furniture showroom"
+        description="Ambi Floors & Living is a family-run showroom in Great Barr, helping homeowners and businesses across Birmingham choose carpets, flooring, rugs and furniture — with honest advice and no pressure to buy."
         image="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80"
         imageAlt="Ambi Floors & Living showroom"
         primaryCta={{ label: "Visit Our Showroom", href: "/contact" }}
+        secondaryCta={{ label: "Request a Free Quote", href: "/contact" }}
         compact
       />
 
