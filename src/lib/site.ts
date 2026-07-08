@@ -29,8 +29,8 @@ export const contact = {
   },
   phone: "0121 357 7089",
   phoneHref: "tel:+441213577089",
-  email: "info@ambifloorsliving.co.uk",
-  emailHref: "mailto:info@ambifloorsliving.co.uk",
+  email: "acf.stores@outlook.com",
+  emailHref: "mailto:acf.stores@outlook.com",
   hours: [
     { day: "Monday", hours: "9:00 am – 6:00 pm" },
     { day: "Tuesday", hours: "9:00 am – 6:00 pm" },
@@ -155,8 +155,7 @@ export const flooringTypes = [
       "Comfortable underfoot",
       "Easy to maintain",
     ],
-    image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+    image: "/images/gallery/living-room-wood-floor.jpg",
   },
   {
     title: "Laminate Flooring",
@@ -168,8 +167,7 @@ export const flooringTypes = [
       "Quick to install",
       "Wide style range",
     ],
-    image:
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+    image: "/images/gallery/laminate-flooring-detail.jpg",
   },
   {
     title: "Vinyl Flooring",
@@ -181,8 +179,7 @@ export const flooringTypes = [
       "Comfortable & quiet",
       "Low maintenance",
     ],
-    image:
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
+    image: "/images/gallery/room-wood-floor-shutters.jpg",
   },
 ];
 
@@ -240,7 +237,7 @@ export const faqs = [
   {
     question: "How do I get a free quote?",
     answer:
-      "Visit our showroom at 610 Walsall Road, Great Barr, call us on 0121 357 7089, or email info@ambifloorsliving.co.uk. We'll discuss your requirements and provide a no-obligation quote.",
+      "Visit our showroom at 610 Walsall Road, Great Barr, call us on 0121 357 7089, or email acf.stores@outlook.com. We'll discuss your requirements and provide a no-obligation quote.",
   },
   {
     question: "What areas do you cover?",

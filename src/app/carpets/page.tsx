@@ -48,8 +48,8 @@ export default function CarpetsPage() {
         eyebrow="Carpets"
         title="Soft, stylish carpets for every room"
         description="From luxurious deep-pile bedroom carpets to durable options for stairs and living areas — explore our range and let our experts help you find the perfect match."
-        image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80"
-        imageAlt="Beautiful carpeted living room"
+        image="/images/gallery/stair-runner-herringbone.jpg"
+        imageAlt="Herringbone stair runner fitted by Ambi Floors & Living"
         primaryCta={{ label: "Visit Our Showroom", href: "/contact" }}
         secondaryCta={{ label: "Request a Free Quote", href: "/contact" }}
         phoneCta={{ label: `Call ${contact.phone}`, href: contact.phoneHref }}
@@ -61,8 +61,8 @@ export default function CarpetsPage() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80"
-                alt="Plush carpet texture"
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+                alt="Cosy room with soft fitted carpet"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
