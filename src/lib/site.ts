@@ -276,49 +276,44 @@ export const faqs = [
 
 export const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=800&q=80",
-    alt: "Modern living room with wood-effect flooring",
-    category: "Flooring",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-    alt: "Elegant carpeted bedroom",
+    src: "/images/gallery/stair-runner-herringbone.jpg",
+    alt: "Herringbone stair runner fitted to a black-and-white staircase",
     category: "Carpets",
   },
   {
-    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-    alt: "Luxury vinyl tile kitchen flooring",
-    category: "LVT",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
-    alt: "Contemporary sofa in showroom setting",
+    src: "/images/gallery/bedroom-herringbone-wardrobes.jpg",
+    alt: "Bedroom with herringbone flooring, fitted wardrobes, and upholstered bed",
     category: "Furniture",
   },
   {
-    src: "https://images.unsplash.com/photo-1615529182904-14819c35db37?w=800&q=80",
-    alt: "Laminate flooring in open-plan living area",
+    src: "/images/gallery/living-room-wood-floor.jpg",
+    alt: "Living room with wood-plank flooring and fitted cabinetry",
     category: "Flooring",
   },
   {
-    src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
-    alt: "Stylish dining room interior",
-    category: "Furniture",
+    src: "/images/gallery/hallway-wood-floor.jpg",
+    alt: "Hallway and staircase with fitted wood flooring",
+    category: "Flooring",
   },
   {
-    src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
-    alt: "Vinyl flooring in modern hallway",
-    category: "Vinyl",
+    src: "/images/gallery/room-fitted-wardrobes.jpg",
+    alt: "Bright room with laminate flooring and fitted white wardrobes",
+    category: "Flooring",
   },
   {
-    src: "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80",
-    alt: "Plush carpet in cosy living room",
-    category: "Carpets",
+    src: "/images/gallery/room-wood-floor-shutters.jpg",
+    alt: "Room with wood flooring and blue window shutters",
+    category: "Flooring",
   },
   {
-    src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80",
-    alt: "Showroom display with flooring samples",
-    category: "Showroom",
+    src: "/images/gallery/laminate-flooring-detail.jpg",
+    alt: "Close-up detail of freshly fitted laminate flooring",
+    category: "Laminate",
+  },
+  {
+    src: "/images/gallery/staircase-fitting.jpg",
+    alt: "Staircase mid-installation during a flooring fitting project",
+    category: "Fitting",
   },
 ];
 
