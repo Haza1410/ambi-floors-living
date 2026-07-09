@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { LocalBusinessSchema } from "@/components/LocalBusinessSchema";
 import { siteConfig, pageMetadata } from "@/lib/site";
+import { withBasePath } from "@/lib/utils";
 import { logoFont } from "@/lib/fonts";
 import "./globals.css";
 
@@ -32,11 +33,11 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: pageMetadata.home.title,
     description: pageMetadata.home.description,
-    images: [{ url: "/images/logo.svg" }],
+    images: [{ url: withBasePath("/images/logo.svg") }],
   },
   icons: {
-    icon: "/images/logo.svg",
-    apple: "/images/logo.png",
+    icon: withBasePath("/images/logo.svg"),
+    apple: withBasePath("/images/logo.png"),
   },
 };
 

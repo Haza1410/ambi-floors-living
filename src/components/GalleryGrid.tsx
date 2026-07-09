@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withBasePath } from "@/lib/utils";
 
 interface GalleryImage {
   src: string;
@@ -19,7 +20,7 @@ export function GalleryGrid({ images }: GalleryGridProps) {
           className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-border shadow-sm"
         >
           <Image
-            src={image.src}
+            src={withBasePath(image.src)}
             alt={image.alt}
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"
